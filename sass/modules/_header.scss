@@ -34,4 +34,12 @@
 			font-weight: 200;
 		}
 	}
+	&__arrow {
+		display: none;
+	}
+	&__background {
+		&-icon {
+			display: none;
+		}
+	}
 }

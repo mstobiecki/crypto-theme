@@ -213,4 +213,30 @@ body {
 .header__text-paragraph {
   font-weight: 200;
 }
+
+.header__arrow {
+  display: none;
+}
+
+.header__background-icon {
+  display: none;
+}
+
+.navigation .hamburger {
+  position: fixed;
+  top: 3em;
+  left: 1em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 500;
+}
+
+.navigation .hamburger-inner::before, .navigation .hamburger-inner, .navigation .hamburger-inner::after {
+  background-color: #fff;
+  z-index: 500;
+}
+
+.navigation__items--desktop {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
