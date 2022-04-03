@@ -16,5 +16,36 @@
 		&--desktop {
 			display: none;
 		}
+		&--mobile {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: $white;
+			transform: translateX(-103%);
+			transition: transform 0.3s;
+			z-index: 900;
+			&--active {
+				transform: translateX(0);
+			}
+		}
+		&-link {
+			position: relative;
+			margin-bottom: 0.5em;
+			padding: 0.5em;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 2.5rem;
+			color: $dark;
+			transition: 0.3s color;
+			&:hover {
+				color: $gold;
+			}
+		}
 	}
 }
