@@ -8,3 +8,21 @@
 		opacity: 0;
 	}
 }
+
+@keyframes rotate-left {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0);
+	}
+}
+
+@keyframes rotate-right {
+	from {
+		transform: rotate(-360deg);
+	}
+	to {
+		transform: rotate(0);
+	}
+}
