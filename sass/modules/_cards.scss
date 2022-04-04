@@ -3,15 +3,18 @@
 	background-color: $darker;
 	&__boxes {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(9, 1fr);
 		gap: 3em;
 		text-align: center;
 	}
 	&__box {
-		padding: 4em;
+		position: relative;
+		padding: 3em;
 		border-radius: 8px;
 		background-color: $dark;
+		border: 1px solid transparent;
+		transition: 0.3s background-color, border;
+		z-index: 5;
 		&--one {
 			grid-column: 1/-1;
 			grid-row: 1/2;
@@ -31,6 +34,57 @@
 		&-title {
 			margin-bottom: 0.5em;
 			text-transform: uppercase;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.cards {
+		&__box {
+			&--one {
+				grid-column: 1/4;
+				grid-row: 1/2;
+			}
+			&--two {
+				grid-column: 4/7;
+				grid-row: 1/2;
+			}
+			&--three {
+				grid-column: 7/10;
+				grid-row: 1/2;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.cards {
+		padding: 8em 2em;
+		&__box {
+			padding: 4em;
+			&:hover {
+				background-color: $darker;
+				border: 1px solid $gold;
+				z-index: 1;
+			}
+			&::before {
+				@include animationPulse;
+			}
+			&:hover::before {
+				animation: pulse 1s;
+			}
+			&--one {
+				grid-column: 1/4;
+				grid-row: 1/2;
+			}
+			&--two {
+				grid-column: 4/7;
+				grid-row: 1/2;
+			}
+			&--three {
+				grid-column: 7/10;
+				grid-row: 1/2;
+			}
 		}
 	}
 }
