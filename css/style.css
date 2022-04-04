@@ -469,4 +469,57 @@ body {
             animation: pulse 1s;
   }
 }
+
+.cards {
+  padding: 6em 2em;
+  background-color: #191919;
+}
+
+.cards__boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 3em;
+  text-align: center;
+}
+
+.cards__box {
+  padding: 4em;
+  border-radius: 8px;
+  background-color: #232323;
+}
+
+.cards__box--one {
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.cards__box--two {
+  grid-column: 1/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.cards__box--three {
+  grid-column: 1/-1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.cards__box-image {
+  margin-bottom: 0.5em;
+  width: 50px;
+}
+
+.cards__box-title {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */

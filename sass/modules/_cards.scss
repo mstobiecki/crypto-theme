@@ -1,0 +1,36 @@
+.cards {
+	padding: 6em 2em;
+	background-color: $darker;
+	&__boxes {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 3em;
+		text-align: center;
+	}
+	&__box {
+		padding: 4em;
+		border-radius: 8px;
+		background-color: $dark;
+		&--one {
+			grid-column: 1/-1;
+			grid-row: 1/2;
+		}
+		&--two {
+			grid-column: 1/-1;
+			grid-row: 2/3;
+		}
+		&--three {
+			grid-column: 1/-1;
+			grid-row: 3/4;
+		}
+		&-image {
+			margin-bottom: 0.5em;
+			width: 50px;
+		}
+		&-title {
+			margin-bottom: 0.5em;
+			text-transform: uppercase;
+		}
+	}
+}
