@@ -146,7 +146,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #fff;
   background-color: #232323;
 }
@@ -155,6 +155,32 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+}
+
+.section-title {
+  position: relative;
+  margin: 0 auto 2em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 3.2rem;
+  font-weight: 200;
+  text-align: center;
+  color: #d6c78e;
+}
+
+.section-title::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -0.1em;
+  width: 40px;
+  height: 2px;
+  background-color: #d6c78e;
+}
+
+.section-title-span {
+  font-weight: 900;
 }
 
 @-webkit-keyframes pulse {
@@ -330,7 +356,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     border: 1px solid #d6c78e;
@@ -458,7 +484,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     border: 1px solid #d6c78e;
@@ -579,7 +605,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     border: 1px solid #d6c78e;
@@ -613,5 +639,69 @@ body {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
+}
+
+.info {
+  padding: 6em 2em;
+}
+
+.info__boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.info__box {
+  margin-bottom: 2em;
+}
+
+.info__box:nth-child(1) {
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.info__box:nth-child(2) {
+  grid-column: 1/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.info__box:nth-child(3) {
+  grid-column: 1/-1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.info__box-image {
+  width: 100%;
+  -webkit-filter: sepia();
+          filter: sepia();
+}
+
+.info__box-title {
+  margin: 0.5em 0;
+  color: #d6c78e;
+  font-weight: 200;
+}
+
+.info__box-text {
+  margin: 0.5em 0;
+  font-weight: 200;
+}
+
+.info__box-link {
+  display: block;
+  border: 1px solid #d6c78e;
+  text-align: center;
+  margin-top: 2em;
+  padding: 0.5em;
+  text-decoration: none;
+  background: none;
+  color: #d6c78e;
 }
 /*# sourceMappingURL=style.css.map */

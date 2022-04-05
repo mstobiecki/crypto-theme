@@ -1,0 +1,45 @@
+.info {
+	padding: 6em 2em;
+	&__boxes {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	&__box {
+		margin-bottom: 2em;
+		&:nth-child(1) {
+			grid-column: 1/-1;
+			grid-row: 1/2;
+		}
+		&:nth-child(2) {
+			grid-column: 1/-1;
+			grid-row: 2/3;
+		}
+		&:nth-child(3) {
+			grid-column: 1/-1;
+			grid-row: 3/4;
+		}
+		&-image {
+			width: 100%;
+			filter: sepia();
+		}
+		&-title {
+			margin: 0.5em 0;
+			color: $gold;
+			font-weight: 200;
+		}
+		&-text {
+			margin: 0.5em 0;
+			font-weight: 200;
+		}
+		&-link {
+			display: block;
+			border: 1px solid $gold;
+			text-align: center;
+			margin-top: 2em;
+			padding: 0.5em;
+			text-decoration: none;
+			background: none;
+			color: $gold;
+		}
+	}
+}
