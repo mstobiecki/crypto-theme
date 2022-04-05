@@ -1,0 +1,27 @@
+.plan {
+	padding: 6em 2em;
+	text-align: center;
+	background-color: $darker;
+	&__box {
+		margin: 3em 0;
+		padding: 2em 0;
+		border-radius: 8px;
+		background-color: $dark;
+		&-image {
+			margin-bottom: 0.5em;
+			width: 50px;
+		}
+		&-title {
+			margin-bottom: 0.5em;
+			color: $gold;
+		}
+		&-items {
+			margin: 1.5em;
+			&-text {
+				&:nth-child(odd) {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

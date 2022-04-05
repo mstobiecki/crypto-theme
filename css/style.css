@@ -791,4 +791,35 @@ body {
             animation: rotate-right 140s infinite;
   }
 }
+
+.plan {
+  padding: 6em 2em;
+  text-align: center;
+  background-color: #191919;
+}
+
+.plan__box {
+  margin: 3em 0;
+  padding: 2em 0;
+  border-radius: 8px;
+  background-color: #232323;
+}
+
+.plan__box-image {
+  margin-bottom: 0.5em;
+  width: 50px;
+}
+
+.plan__box-title {
+  margin-bottom: 0.5em;
+  color: #d6c78e;
+}
+
+.plan__box-items {
+  margin: 1.5em;
+}
+
+.plan__box-items-text:nth-child(odd) {
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
