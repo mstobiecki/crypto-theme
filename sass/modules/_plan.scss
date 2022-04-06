@@ -25,3 +25,22 @@
 		}
 	}
 }
+
+@media (min-width: 768px) {
+	.plan {
+		&__box {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			align-items: center;
+			border: 1px solid transparent;
+			transition: background-color 0.3s, border 0.3s;
+			&:hover {
+				background-color: $darker;
+				border: 1px solid $gold;
+			}
+			&-image {
+				margin-left: 3em;
+			}
+		}
+	}
+}

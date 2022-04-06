@@ -822,4 +822,26 @@ body {
 .plan__box-items-text:nth-child(odd) {
   font-weight: bold;
 }
+
+@media (min-width: 768px) {
+  .plan__box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid transparent;
+    -webkit-transition: background-color 0.3s, border 0.3s;
+    transition: background-color 0.3s, border 0.3s;
+  }
+  .plan__box:hover {
+    background-color: #191919;
+    border: 1px solid #d6c78e;
+  }
+  .plan__box-image {
+    margin-left: 3em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
