@@ -4,12 +4,12 @@
 		top: 3em;
 		left: 1em;
 		transform: translateY(-50%);
-		z-index: 900;
+		z-index: 1000;
 		&-inner::before,
 		&-inner,
 		&-inner::after {
 			background-color: $white;
-			z-index: 900;
+			z-index: 1000;
 		}
 	}
 	&__items {
@@ -29,7 +29,7 @@
 			background-color: $white;
 			transform: translateX(-103%);
 			transition: transform 0.3s;
-			z-index: 600;
+			z-index: 900;
 			&--active {
 				transform: translateX(0);
 			}
