@@ -884,4 +884,21 @@ body {
     margin-left: 2em;
   }
 }
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__image:nth-child(even) {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
