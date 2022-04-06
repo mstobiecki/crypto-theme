@@ -1,0 +1,28 @@
+.newsletter {
+	padding: 6em 2em;
+	background-color: $red;
+	text-align: center;
+	&__text {
+		font-size: 4rem;
+		text-align: center;
+		font-weight: 200;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&-input {
+			width: 70%;
+			margin: 2em 0;
+			padding: 0.8em 1.6em;
+		}
+		&-button {
+			padding: 0.5em 1em;
+			background-color: transparent;
+			font-size: 1.6rem;
+			border: 1px solid $gold;
+			color: $gold;
+		}
+	}
+}
