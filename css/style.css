@@ -410,7 +410,7 @@ body {
 }
 
 .navigation__items--mobile {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1023,5 +1023,11 @@ body {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
   }
+}
+
+.footer {
+  padding: 2em;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
