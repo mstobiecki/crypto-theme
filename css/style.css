@@ -894,11 +894,22 @@ body {
 
 .gallery__image {
   width: 100%;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .gallery__image:nth-child(even) {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery__image:nth-child(even) {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
